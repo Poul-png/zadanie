@@ -23,28 +23,22 @@ int main() {
 
 
 
-			cout << "[ + ] Угадай число от 1 до 10!" << endl << "[ + ] Попыток осталось " << "[ " << attemp << " ]"<< endl;
+			cout << "[ + ] Угадай число от 1 до 10!" << endl << "[ + ] Попыток осталось " << "[ " << attemp << " ]" << endl;
 			cout << "[ + ] Введите число: ";
 			cin >> userNum;
 			if (userNum == ran1 || userNum == ran2 || userNum == ran3) {
 
 				attemp = attemp - 1;
 				is_rand = is_rand + 1;
-				cout << "[ + ] Вы угадали!" << "[" << is_rand << " / 3 ]";
+				cout << "[ + ] Вы угадали!" << "[" << is_rand << " / 3 ]" << endl << endl;
 			}
 			else {
 				attemp = attemp - 1;
-				cout << "[ + ] Вы угадали!" << "[" << is_rand << " / 3 ]";
-
+				cout << "[ + ] Вы не угадали!" << "[" << is_rand << " / 3 ]" << endl << endl;
 			}
-
-
-
-		
 		}
 	}
 	else {
-
+		cout << "[ + ] До свидания!";
 	}
-	
 }
