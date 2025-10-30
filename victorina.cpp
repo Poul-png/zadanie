@@ -13,6 +13,9 @@ int main() {
 	int qQ = 10;
 	string userName = "-";
 	int menuNum;
+	int quanQue = qQ;
+	int life = 3;
+
 	while (true) {
 		system("cls");
 		cout << "== Menu ==" << endl;
@@ -21,9 +24,8 @@ int main() {
 		system("cls");
 
 		if (menuNum == 1) {
-			int quanQue = qQ;
-			int life = 3;
-			while (quanQue != 0 && life !=0 ) {
+			
+			while (quanQue != 0 || life != 0) {
 
 				system("cls");
 
@@ -32,7 +34,7 @@ int main() {
 
 				cout << "== ВИКТОРИНА ==" << endl;
 
-				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ <<endl<<"[ + ] Количество жизней " << life << " / 3" << endl << endl;
+				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
 				cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
 				cout << "[ > ] Что из этого инициализация переменной: ";
 				cin >> answer1;
@@ -46,17 +48,17 @@ int main() {
 					cout << "[ - ] Такого ответа нет";
 				}
 				}
-				
+
 				system("cls");
 
 				cout << "== ВИКТОРИНА ==" << endl;
 
 				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
-		     	cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
+				cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
 				cout << "[ > ] Что из этого является циклом: ";
 				cin >> answer2;
 				switch (answer2) {
-				case 2: {corrAns = corrAns + 1; quanQue = quanQue - 1; }; break;
+				case 2: { corrAns = corrAns + 1; quanQue = quanQue - 1; }; break;
 				case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
 				case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
 				case 4: { quanQue = quanQue - 1; life = life - 1; }; break;
@@ -64,7 +66,7 @@ int main() {
 					cout << "[ - ] Такого ответа нет";
 				}; break;
 				}
-					 
+
 				system("cls");
 
 				cout << "== ВИКТОРИНА ==" << endl;
@@ -72,7 +74,7 @@ int main() {
 				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
 				cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
 				cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
-				
+
 				cin >> answer3;
 				switch (answer3) {
 				case 4: { corrAns = corrAns + 1; quanQue = quanQue - 1; }; break;
@@ -104,7 +106,7 @@ int main() {
 				}
 
 				system("cls");
-				
+
 				cout << "== ВИКТОРИНА ==" << endl;
 
 				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
@@ -123,7 +125,7 @@ int main() {
 				}
 
 				system("cls");
-				
+
 				cout << "== ВИКТОРИНА ==" << endl;
 
 				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
@@ -142,7 +144,7 @@ int main() {
 				}
 
 				system("cls");
-				
+
 				cout << "== ВИКТОРИНА ==" << endl;
 
 				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
@@ -161,7 +163,7 @@ int main() {
 				}
 
 				system("cls");
-				
+
 				cout << "== ВИКТОРИНА ==" << endl;
 
 				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
@@ -326,5 +328,7 @@ int main() {
 		}
 	}
 
+
+}
 
 }
