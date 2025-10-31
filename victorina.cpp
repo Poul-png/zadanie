@@ -13,10 +13,14 @@ int main() {
 	int qQ = 10;
 	string userName = "-";
 	int menuNum;
-	int quanQue = qQ;
-	int life = 3;
 
 	while (true) {
+
+
+		int quanQue = qQ;
+		int life = 3;
+
+
 		system("cls");
 		cout << "== Menu ==" << endl;
 		cout << "[ 1 ] Начать игру" << endl << "[ 2 ] Настройки" << endl << "[ 3 ] Правила" << endl << "[ 4 ] Выйти" << endl << "[ > ] ";
@@ -24,243 +28,398 @@ int main() {
 		system("cls");
 
 		if (menuNum == 1) {
-			
-			while (quanQue != 0 || life != 0) {
 
-				system("cls");
 
-				int corrAns = 0;
-				int answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10, answer11, answer12;
+			system("cls");
 
-				cout << "== ВИКТОРИНА ==" << endl;
+			int corrAns = 0;
+			int answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10, answer11, answer12;
 
-				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
-				cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
-				cout << "[ > ] Что из этого инициализация переменной: ";
-				cin >> answer1;
-				switch (answer1) {
-				case 3: { corrAns = corrAns + 1; quanQue = quanQue - 1; }; break;
-				case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 4: { quanQue = quanQue - 1; life = life - 1; }; break;
+			cout << "== ВИКТОРИНА ==" << endl;
 
-				default: {
-					cout << "[ - ] Такого ответа нет";
-				}
-				}
+			cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
+			cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
+			cout << "[ > ] Что из этого инициализация переменной: ";
+			cin >> answer1;
+			switch (answer1) {
+			case 3: { corrAns++; quanQue = quanQue - 1; }; break;
+			case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 4: { quanQue = quanQue - 1; life = life - 1; }; break;
 
-				system("cls");
-
-				cout << "== ВИКТОРИНА ==" << endl;
-
-				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
-				cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
-				cout << "[ > ] Что из этого является циклом: ";
-				cin >> answer2;
-				switch (answer2) {
-				case 2: { corrAns = corrAns + 1; quanQue = quanQue - 1; }; break;
-				case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 4: { quanQue = quanQue - 1; life = life - 1; }; break;
-				default: {
-					cout << "[ - ] Такого ответа нет";
-				}; break;
-				}
-
-				system("cls");
-
-				cout << "== ВИКТОРИНА ==" << endl;
-
-				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
-				cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
-				cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
-
-				cin >> answer3;
-				switch (answer3) {
-				case 4: { corrAns = corrAns + 1; quanQue = quanQue - 1; }; break;
-				case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
-				default: {
-					cout << "[ - ] Такого ответа нет";
-				}; break;
-				}
-
-				system("cls");
-
-				cout << "== ВИКТОРИНА ==" << endl;
-
-				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
-				cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
-				cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
-
-				cin >> answer4;
-				switch (answer4) {
-				case 4: { corrAns = corrAns + 1; quanQue = quanQue - 1; }; break;
-				case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
-				default: {
-					cout << "[ - ] Такого ответа нет";
-				}; break;
-				}
-
-				system("cls");
-
-				cout << "== ВИКТОРИНА ==" << endl;
-
-				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
-				cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
-				cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
-
-				cin >> answer5;
-				switch (answer5) {
-				case 4: { corrAns = corrAns + 1; quanQue = quanQue - 1; }; break;
-				case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
-				default: {
-					cout << "[ - ] Такого ответа нет";
-				}; break;
-				}
-
-				system("cls");
-
-				cout << "== ВИКТОРИНА ==" << endl;
-
-				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
-				cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
-				cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
-
-				cin >> answer6;
-				switch (answer6) {
-				case 4: { corrAns = corrAns + 1; quanQue = quanQue - 1; }; break;
-				case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
-				default: {
-					cout << "[ - ] Такого ответа нет";
-				}; break;
-				}
-
-				system("cls");
-
-				cout << "== ВИКТОРИНА ==" << endl;
-
-				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
-				cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
-				cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
-
-				cin >> answer7;
-				switch (answer7) {
-				case 4: { corrAns = corrAns + 1; quanQue = quanQue - 1; }; break;
-				case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
-				default: {
-					cout << "[ - ] Такого ответа нет";
-				}; break;
-				}
-
-				system("cls");
-
-				cout << "== ВИКТОРИНА ==" << endl;
-
-				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
-				cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
-				cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
-
-				cin >> answer8;
-				switch (answer8) {
-				case 4: { corrAns = corrAns + 1; quanQue = quanQue - 1; }; break;
-				case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
-				default: {
-					cout << "[ - ] Такого ответа нет";
-				}; break;
-				}
-
-				system("cls");
-
-				cout << "== ВИКТОРИНА ==" << endl;
-
-				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
-				cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
-				cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
-
-				cin >> answer9;
-				switch (answer9) {
-				case 4: { corrAns = corrAns + 1; quanQue = quanQue - 1; }; break;
-				case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
-				default: {
-					cout << "[ - ] Такого ответа нет";
-				}; break;
-				}
-
-				system("cls");
-
-				cout << "== ВИКТОРИНА ==" << endl;
-
-				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
-				cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
-				cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
-
-				cin >> answer10;
-				switch (answer10) {
-				case 4: { corrAns = corrAns + 1; quanQue = quanQue - 1; }; break;
-				case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
-				default: {
-					cout << "[ - ] Такого ответа нет";
-				}; break;
-				}
-
-				system("cls");
-
-				cout << "== ВИКТОРИНА ==" << endl;
-
-				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
-				cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
-				cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
-
-				cin >> answer11;
-				switch (answer11) {
-				case 4: { corrAns = corrAns + 1; quanQue = quanQue - 1; }; break;
-				case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
-				default: {
-					cout << "[ - ] Такого ответа нет";
-				}; break;
-				}
-
-				system("cls");
-
-				cout << "== ВИКТОРИНА ==" << endl;
-
-				cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
-				cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
-				cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
-
-				cin >> answer12;
-				switch (answer12) {
-				case 4: { corrAns = corrAns + 1; quanQue = quanQue - 1; }; break;
-				case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
-				case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
-				default: {
-					cout << "[ - ] Такого ответа нет";
-				}; break;
-				}
-
-				system("cls");
-
+			default: {
+				cout << "[ - ] Такого ответа нет";
 			}
+			}
+
+			if (life == 0) {
+				cout << "[ - ] Ваши жизни закончились, попробуйте снова";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+			else if (quanQue == 0) {
+				cout << "[ - ] Ваши вопросы закончились, идите работайте";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+
+			system("cls");
+
+			cout << "== ВИКТОРИНА ==" << endl;
+
+			cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
+			cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
+			cout << "[ > ] Что из этого является циклом: ";
+			cin >> answer2;
+			switch (answer2) {
+			case 2: { corrAns++; quanQue = quanQue - 1; }; break;
+			case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 4: { quanQue = quanQue - 1; life = life - 1; }; break;
+			default: {
+				cout << "[ - ] Такого ответа нет";
+			}; break;
+			}
+
+			if (life == 0) {
+				cout << "[ - ] Ваши жизни закончились, попробуйте снова";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+			else if (quanQue == 0) {
+				cout << "[ - ] Ваши вопросы закончились, идите работайте";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+
+			system("cls");
+
+			cout << "== ВИКТОРИНА ==" << endl;
+
+			cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
+			cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
+			cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
+
+			cin >> answer3;
+			switch (answer3) {
+			case 4: { corrAns++; quanQue = quanQue - 1; }; break;
+			case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
+			default: {
+				cout << "[ - ] Такого ответа нет";
+			}; break;
+			}
+
+			if (life == 0) {
+				cout << "\n[ - ] Ваши жизни закончились, попробуйте снова\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+			else if (quanQue == 0) {
+				cout << "\n[ - ] Ваши вопросы закончились, идите работайте\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+
+			system("cls");
+
+			cout << "== ВИКТОРИНА ==" << endl;
+
+			cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
+			cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
+			cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
+
+			cin >> answer4;
+			switch (answer4) {
+			case 4: { corrAns++; quanQue = quanQue - 1; }; break;
+			case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
+			default: {
+				cout << "[ - ] Такого ответа нет";
+			}; break;
+			}
+
+			if (life == 0) {
+				cout << "\n[ - ] Ваши жизни закончились, попробуйте снова\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+			else if (quanQue == 0) {
+				cout << "\n[ - ] Ваши вопросы закончились, идите работайте\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+
+			system("cls");
+
+			cout << "== ВИКТОРИНА ==" << endl;
+
+			cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
+			cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
+			cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
+
+			cin >> answer5;
+			switch (answer5) {
+			case 4: { corrAns++; quanQue = quanQue - 1; }; break;
+			case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
+			default: {
+				cout << "[ - ] Такого ответа нет";
+			}; break;
+			}
+
+			if (life == 0) {
+				cout << "\n[ - ] Ваши жизни закончились, попробуйте снова\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+			else if (quanQue == 0) {
+				cout << "\n[ - ] Ваши вопросы закончились, идите работайте\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+
+			system("cls");
+
+			cout << "== ВИКТОРИНА ==" << endl;
+
+			cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
+			cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
+			cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
+
+			cin >> answer6;
+			switch (answer6) {
+			case 4: { corrAns++; quanQue = quanQue - 1; }; break;
+			case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
+			default: {
+				cout << "[ - ] Такого ответа нет";
+			}; break;
+			}
+
+			if (life == 0) {
+				cout << "\n[ - ] Ваши жизни закончились, попробуйте снова\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+			else if (quanQue == 0) {
+				cout << "\n[ - ] Ваши вопросы закончились, идите работайте\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+
+			system("cls");
+
+			cout << "== ВИКТОРИНА ==" << endl;
+
+			cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
+			cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
+			cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
+
+			cin >> answer7;
+			switch (answer7) {
+			case 4: { corrAns++; quanQue = quanQue - 1; }; break;
+			case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
+			default: {
+				cout << "[ - ] Такого ответа нет";
+			}; break;
+			}
+
+			if (life == 0) {
+				cout << "\n[ - ] Ваши жизни закончились, попробуйте снова\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+			else if (quanQue == 0) {
+				cout << "\n[ - ] Ваши вопросы закончились, идите работайте\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+
+			system("cls");
+
+			cout << "== ВИКТОРИНА ==" << endl;
+
+			cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
+			cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
+			cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
+
+			cin >> answer8;
+			switch (answer8) {
+			case 4: { corrAns++; quanQue = quanQue - 1; }; break;
+			case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
+			default: {
+				cout << "[ - ] Такого ответа нет";
+			}; break;
+			}
+
+			if (life == 0) {
+				cout << "\n[ - ] Ваши жизни закончились, попробуйте снова\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+			else if (quanQue == 0) {
+				cout << "\n[ - ] Ваши вопросы закончились, идите работайте\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+
+			system("cls");
+
+			cout << "== ВИКТОРИНА ==" << endl;
+
+			cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
+			cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
+			cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
+
+			cin >> answer9;
+			switch (answer9) {
+			case 4: { corrAns++; quanQue = quanQue - 1; }; break;
+			case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
+			default: {
+				cout << "[ - ] Такого ответа нет";
+			}; break;
+			}
+
+			if (life == 0) {
+				cout << "\n[ - ] Ваши жизни закончились, попробуйте снова\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+			else if (quanQue == 0) {
+				cout << "\n[ - ] Ваши вопросы закончились, идите работайте\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+
+			system("cls");
+
+			cout << "== ВИКТОРИНА ==" << endl;
+
+			cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
+			cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
+			cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
+
+			cin >> answer10;
+			switch (answer10) {
+			case 4: { corrAns++; quanQue = quanQue - 1; }; break;
+			case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
+			default: {
+				cout << "[ - ] Такого ответа нет";
+			}; break;
+			}
+
+			if (life == 0) {
+				cout << "\n[ - ] Ваши жизни закончились, попробуйте снова\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+			else if (quanQue == 0) {
+				cout << "\n[ - ] Ваши вопросы закончились, идите работайте\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+
+			system("cls");
+
+			cout << "== ВИКТОРИНА ==" << endl;
+
+			cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
+			cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
+			cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
+
+			cin >> answer11;
+			switch (answer11) {
+			case 4: { corrAns++; quanQue = quanQue - 1; }; break;
+			case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
+			default: {
+				cout << "[ - ] Такого ответа нет";
+			}; break;
+			}
+
+			if (life == 0) {
+				cout << "\n[ - ] Ваши жизни закончились, попробуйте снова\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+			else if (quanQue == 0) {
+				cout << "\n[ - ] Ваши вопросы закончились, идите работайте\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+
+			system("cls");
+
+			cout << "== ВИКТОРИНА ==" << endl;
+
+			cout << "[ + ] Количество вопросов " << quanQue << "/" << qQ << endl << "[ + ] Количество жизней " << life << " / 3" << endl << endl;
+			cout << "[ 1 ] age = 10 \n" << "[ 2 ] while (true) \n" << "[ 3 ] int userAge = 21 \n" << "[ 4 ] cout << \n";
+			cout << "[ > ] Что из этого находится в дополнительной библиотеки: ";
+
+			cin >> answer12;
+			switch (answer12) {
+			case 4: { corrAns++; quanQue = quanQue - 1; }; break;
+			case 1: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 3: { quanQue = quanQue - 1; life = life - 1; }; break;
+			case 2: { quanQue = quanQue - 1; life = life - 1; }; break;
+			default: {
+				cout << "[ - ] Такого ответа нет";
+			}; break;
+			}
+
+			if (life == 0 ) {
+				cout << "\n[ - ] Ваши жизни закончились, попробуйте снова\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+			else if (quanQue == 0) {
+				cout << "\n[ - ] Ваши вопросы закончились, идите работайте\n";
+				cout << "[ > ] Введите любой символ для выхода: ";
+				cin >> exit;
+				continue;
+			}
+
+			system("cls");
+
 		}
+		
 		else if (menuNum == 2) {
 
 			int instUser;
@@ -307,7 +466,6 @@ int main() {
 			}
 
 
-
 		}
 		else if (menuNum == 3) {
 
@@ -327,8 +485,4 @@ int main() {
 			cout << "[ - ] Такого в меню нет!";
 		}
 	}
-
-
-}
-
 }
