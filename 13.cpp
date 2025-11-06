@@ -30,39 +30,31 @@ int main() {
 		cin >> sim;
 		if (userTypeFigure == 1) {
 			if (length > 0) {
-
 				while (length != 0) {
 					cout << sim;
-					length --;
+					length--;
 				}
-
 			}
-
 			else {
-
 				cout << "[ - ] Введена некорректная длина!";
-
 			}
 		}
 		else if (userTypeFigure == 2) {
 			if (length > 0) {
-
 				while (length != 0) {
 					cout << sim << endl;
-					length --;
+					length--;
 				}
-
 			}
-
 			else {
-
 				cout << "[ - ] Введена некорректная длина!";
-
 			}
+		}
+		else {
+			cout << "[ - ] Введен некорректный тип";
 		}
 	}
 	else if (userFigure == 2) {
-
 		cout << "[ + ] Ваша фигура == Квадрат ==\n\n";
 		cout << "[ 1 ] Пустой" << endl << "[ 2 ] Заполненый" << endl;
 		cout << "[ > ] Введите тип фигуры: ";
@@ -71,14 +63,25 @@ int main() {
 		cin >> length;
 		cout << "[ > ] Введите символ: ";
 		cin >> sim;
-		if (userTypeFigure == 1) {
-			for (int i = length; ;) {
-			
-
-
-
-
-
+		if (userTypeFigure == 2) {
+			for (int i = 0; i < length; i++) {
+				for (int j = 0; j < length; j++) {
+					cout << sim;
+				}
+				cout << endl;
+			}
+		}
+		else if (userTypeFigure == 1) {
+			for (int i = 0; i < length; i++) {		
+				for (int j = 0; j < length; j++) {
+					if (i == 0 || i == length - 1 || j == 0 || j == length - 1) {
+						cout << sim;
+					}
+					else {
+						cout << " ";
+					}
+				}
+				cout << endl;
 			}
 		}
 	}
