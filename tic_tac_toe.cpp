@@ -3,15 +3,19 @@
 
 using namespace std;
 
+//Цвета
+string green = ;
+
+
 string us1Name = "Player 1";
 string us2Name = "Player 2";
 string coName = "Computer";
 string us1Color = "_";
 string us2Color = "_";
 string coColor = "_";
-char us1Sim = 'X';
-char us2Sim = 'O';
-char coSim = 'O';
+char us1Sym = 'X';
+char us2Sym = 'O';
+char coSym = 'O';
 int menuChoice;
 int us1Lose = 0;
 int us2Lose = 0;
@@ -23,9 +27,19 @@ int us1Draw = 0;
 int us2Draw = 0;
 int coDraw = 0;
 
+//прототипы функций
+int main();
+void menu();
+void exit();
+void setting();
+void statistic();
+void incorrectChoice();
 
-
-
+void incorrectChoice() {
+	cout << "[ - ] Введено неверное значение\n\n";
+	system("pause");
+	main();
+}
 
 void exit() {
 
@@ -60,20 +74,28 @@ void setting() {
 		system("cls");
 
 		cout << "[ + ] Настройки " << us1Name << endl << endl;
-		cout << "[ 1 ] Ник     :  " << us1Name << "\n[ 2 ] Фигура  :  " << us1Sim << "\n[ 3 ] Цвет    :  " << us1Color << "\n\n[ > ] Ввод  :";
+		cout << "[ 1 ] Ник     :  " << us1Name << "\n[ 2 ] Фигура  :  " << us1Sym << "\n[ 3 ] Цвет    :  " << us1Color << "\n\n[ > ] Ввод  :";
 		cin >> userSettingChoice;
 		switch (userSettingChoice) {
 		case 1: {
-			system("sleep");
+			system("cls");
+			cout << "[ + ] Ваш ник сейчас ->  " << us1Name;
+			cout << "\n\n[ > ] Введите новый ник :  ";
+			cin >> us1Name;
+			setting();
 		}; break;
 		case 2: {
-			system("sleep");
+			system("cls");
+			cout << "[ + ] Ваша фигура сейчас ->  " << us1Sym;
+			cout << "\n\n[ > ] Введите новую фигуру :  ";
+			cin >> us1Sym;
+			setting();
 		}; break;
 		case 3: {
-			system("sleep");
+			incorrectChoice();
 		}; break;
 		default: {
-			system("sleep");
+			setting();
 		}
 
 
@@ -84,54 +106,52 @@ void setting() {
 		system("cls");
 
 		cout << "[ + ] Настройки " << us2Name << endl << endl;
-		cout << "[ 1 ] Ник     :  " << us2Name << "\n[ 2 ] Фигура  :  " << us2Sim << "\n[ 3 ] Цвет    :  " << us2Color << "\n\n[ > ] Ввод   :";
+		cout << "[ 1 ] Ник     :  " << us2Name << "\n[ 2 ] Фигура  :  " << us2Sym << "\n[ 3 ] Цвет    :  " << us2Color << "\n\n[ > ] Ввод   :";
 		cin >> userSettingChoice;
 		switch (userSettingChoice) {
 		case 1: {
-			system("sleep");
+			system("cls");
+			cout << "[ + ] Ваш ник сейчас ->  " << us2Name;
+			cout << "\n\n[ > ] Введите новый ник :  ";
+			cin >> us2Name;
+			setting();
 		}; break;
 		case 2: {
-			system("sleep");
+			system("cls");
+			cout << "[ + ] Ваша фигура сейчас ->  " << us2Sym;
+			cout << "\n\n[ > ] Введите новую фигуру :  ";
+			cin >> us2Sym;
+			setting();
 		}; break;
 		case 3: {
-			system("sleep");
+			incorrectChoice();
 		}; break;
 		default: {
-			system("sleep");
+			setting();
 		}
 
 
 		}
 	}
 	else {
-		system("sleep");
+		;
 	}
-
-
-
-
 }
-
-
-
-
 
 void menu() {
 	setlocale(LC_ALL, "Russian");
 	cout << "== Меню ==";
 	cout << "\n\n[ 1 ] Начать игру" << "\n[ 2 ] Настройки" << "\n[ 3 ] Статистика" << "\n[ 4 ] Выйти";
-
-
-
-
-
-
-
-
-
+	cout << "\n\n[ > ] Ввод : ";
+	cin >> menuChoice;
+	switch (menuChoice) {
+	case 1:main(); break;
+	case 2:setting(); break;
+	case 3:statistic(); break;
+	case 4:main(); break;
+	default:incorrectChoice(); break;
+	}
 }
-
-
 
 int main() {
 	menu();
